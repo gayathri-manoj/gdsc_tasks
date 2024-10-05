@@ -25,7 +25,8 @@ def cartons(x):
     while x > 6:
         x = x - 6   # Subtract 6 bottles for each small carton
         s += 1      # Increment the count of small cartons
-
+    if x>0: 
+        s+=1        # Increment the small carton count for remaining bottles
     # Print the number of each carton size needed
     print(xl, 'xl', ',', l, 'large', ',', m, 'medium', ',', s, 'small')
 
